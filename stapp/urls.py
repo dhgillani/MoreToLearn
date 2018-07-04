@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from MyApp.admin import teacheradmin,schooladmin
+from rest_framework.documentation import include_docs_urls
+# from MyApp.admin import teacheradmin,schooladmin
 
 urlpatterns = [
-	path('', include('MyApp.urls')),
-    path('admin/', admin.site.urls),
-    path('teacheradmin/', teacheradmin.urls),
-    path('schooladmin/', schooladmin.urls),
+	# path('', include('MyApp.urls')),
+    # path('admin/', admin.site.urls),
+    path('', admin.site.urls),
+    path('moretolearn/', include('MyApp.urls')),
+    # path('schooladmin/', schooladmin.urls),
 ]
