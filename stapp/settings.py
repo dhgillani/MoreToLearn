@@ -124,6 +124,10 @@ AUTH_USER_MODEL = 'MyApp.Teacher'
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 SUIT_CONFIG = {
    'SHOW_REQUIRED_ASTERISK': True
 }
