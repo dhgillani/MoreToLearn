@@ -13,7 +13,7 @@ feedparser==5.2.1
 future==0.16.0
 google-api-python-client==1.4.1
 httmock==1.2.3
-httplib2==0.11.3
+httplib2==0.18.0
 idna==2.6
 lxml==4.2.1
 nose==1.3.7
